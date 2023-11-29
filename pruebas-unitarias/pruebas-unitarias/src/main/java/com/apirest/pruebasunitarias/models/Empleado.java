@@ -1,16 +1,14 @@
 package com.apirest.pruebasunitarias.models;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 
 @Data // Anotación de Lombok para no tener que escribir los métodos getter, setter, equals, hashCode y toString
 @NoArgsConstructor  // Crea un constructor sin argumentos
 @AllArgsConstructor  // Crea un constructor con todos los argumentos
 @ToString  // Genera automáticamente el método toString()
+@Builder
 @Entity
 @Table(name = "Empleado")
 public class Empleado {
